@@ -1,5 +1,6 @@
 [![Documentation](https://img.shields.io/badge/Docs-blue.svg)](https://galilai-group.github.io/stable-worldmodel/)
 ![Tests](https://img.shields.io/github/actions/workflow/status/hpenedones/stable-worldmodel/tests.yaml?label=Tests)
+[![codecov](https://codecov.io/gh/hpenedones/stable-worldmodel/branch/main/graph/badge.svg)](https://codecov.io/gh/hpenedones/stable-worldmodel)
 [![PyPI](https://img.shields.io/pypi/v/stable-worldmodel.svg)](https://pypi.python.org/pypi/stable-worldmodel/#history)
 [![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -101,6 +102,8 @@ uv venv --python=3.10
 source .venv/bin/activate
 uv sync --all-extras --group dev
 ```
+
+For a full history of changes, see [CHANGELOG.md](CHANGELOG.md).
 
 ## Questions
 

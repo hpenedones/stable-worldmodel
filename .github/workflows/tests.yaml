@@ -44,7 +44,14 @@ jobs:
     - name: Dependencies
       run: uv sync --all-extras
     - name: Tests
-      run: uv run --group dev pytest
+      run: uv run --group dev pytest --cov=stable_worldmodel --cov-report=xml --cov-report=term
+    - name: Upload coverage reports to Codecov
+      if: matrix.python-version == '3.12'
+      uses: codecov/codecov-action@v5
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: ./coverage.xml
+        fail_ci_if_error: false
     - name: Build
       run: uv build
     - name: PyPi
