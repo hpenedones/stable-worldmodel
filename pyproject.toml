@@ -6,18 +6,11 @@ readme="README.md"
 license="MIT"
 authors = [{name = "Lucas Maes"}, {name = "Quentin Le Lidec"}, {name = "Randall Balestriero"}]
 maintainers = [{name = "Lucas Maes", email = "lucas_maes@brown.edu"}]
-urls = {Homepage = "http://github.com/hpenedones/stable-worldmodel"}
-keywords = ["world-model", "reinforcement-learning", "machine-learning", "deep-learning", "model-based-rl"]
+urls = {Homepage = "http://github.com/galilai-group/stable-worldmodel"}
 classifiers = [
-  "Development Status :: 3 - Alpha",
   "Intended Audience :: Science/Research",
-  "Intended Audience :: Developers",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.10",
-  "Programming Language :: Python :: 3.11",
-  "Programming Language :: Python :: 3.12",
-  "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 requires-python = ">=3.10"
 dependencies = [
