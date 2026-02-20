@@ -1,5 +1,5 @@
 [![Documentation](https://img.shields.io/badge/Docs-blue.svg)](https://galilai-group.github.io/stable-worldmodel/)
-![Tests](https://img.shields.io/github/actions/workflow/status/galilai-group/stable-worldmodel/tests.yaml?label=Tests)
+![Tests](https://img.shields.io/github/actions/workflow/status/hpenedones/stable-worldmodel/tests.yaml?label=Tests)
 [![PyPI](https://img.shields.io/pypi/v/stable-worldmodel.svg)](https://pypi.python.org/pypi/stable-worldmodel/#history)
 [![PyTorch](https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/get-started/locally/)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
@@ -15,6 +15,45 @@ pip install stable-worldmodel
 > **Note:** The library is still in active development.
 
 See the full documentation at [here](https://galilai-group.github.io/stable-worldmodel/).
+
+## Installation
+
+### Basic Installation
+
+For basic usage (inference and evaluation):
+
+```bash
+pip install stable-worldmodel
+```
+
+### With Training Support
+
+To train world models:
+
+```bash
+pip install stable-worldmodel[train]
+```
+
+### With Environment Support
+
+To use all supported environments:
+
+```bash
+pip install stable-worldmodel[env]
+```
+
+### Full Installation
+
+For development with all features:
+
+```bash
+pip install stable-worldmodel[train,env]
+```
+
+### Troubleshooting
+
+- **PyTorch Installation**: If you encounter issues with PyTorch, install it separately first following the [official PyTorch installation guide](https://pytorch.org/get-started/locally/)
+- **Environment-specific issues**: Some environments may require additional system dependencies. Refer to the [documentation](https://galilai-group.github.io/stable-worldmodel/) for environment-specific setup instructions.
 
 
 ## Quick Example
@@ -53,7 +92,9 @@ print(f"Success Rate: {results['success_rate']:.1f}%")
 
 ## Contributing
 
-Setup your codebase:
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Quick setup for development:
 
 ```bash
 uv venv --python=3.10
@@ -63,7 +104,7 @@ uv sync --all-extras --group dev
 
 ## Questions
 
-If you have a question, please [file an issue](https://github.com/galilai-group/stable-worldmodel/issues).
+If you have a question, please [file an issue](https://github.com/hpenedones/stable-worldmodel/issues).
 
 
 ## Citation

@@ -1,3 +1,10 @@
+"""stable-worldmodel: World Model Research Made Simple.
+
+This package provides a comprehensive framework for world model research,
+including data collection, training, and evaluation. It offers unified
+interfaces for environments, policies, solvers, and world models.
+"""
+
 from stable_worldmodel import (
     data,
     envs,

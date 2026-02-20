@@ -1,3 +1,9 @@
+"""Utility functions for data management.
+
+This module provides helper functions for managing cache directories and
+other data-related utilities.
+"""
+
 import os
 from pathlib import Path
 

@@ -71,4 +71,4 @@ repos:
       - id: pydocstyle
         additional_dependencies: [tomli]
         args: [--convention=google]
-        exclude: ".*" # ^(tests/|docs/)
+        exclude: ^(tests/|docs/)

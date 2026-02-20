@@ -13,8 +13,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v5
+    - name: Install uv
+      uses: astral-sh/setup-uv@v7
+      with:
+        python-version: "3.12"
+    - name: Dependencies
+      run: uv sync --all-extras --group dev
+    - name: Ruff lint
+      run: uv run ruff check .
+    - name: Ruff format check
+      run: uv run ruff format --check .
+
   build:
     runs-on: ubuntu-latest
+    needs: lint
     strategy:
       fail-fast: False
       matrix:
